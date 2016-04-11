@@ -30,6 +30,7 @@ namespace OffTheRecord.Controllers
       {
         Name = gi.Name,
         Relation = gi.Relation,
+        Email = gi.Email,
         DateOfBirth = newDate
       };
 

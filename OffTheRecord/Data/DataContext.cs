@@ -1,9 +1,11 @@
 ﻿using OffTheRecord.Models;
 using System;
 using System.Data.Entity;
+using MySql.Data.Entity;
 
 namespace OffTheRecord.Data
 {
+  [DbConfigurationType(typeof(MySqlEFConfiguration))]
   public class DataContext : DbContext
   {
     public DataContext()

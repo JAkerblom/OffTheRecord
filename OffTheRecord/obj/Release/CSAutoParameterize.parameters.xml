@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Database=offtherecord;Data Source=eu-cdbr-azure-north-e.cloudapp.net;User Id=b60439e23c38f6;Password=c68c1e15" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\JAkerblom\\Documents\\Visual\ Studio\ 2015\\Projects\\OffTheRecord\\OffTheRecord\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="LocalMySqlServer-Web.config Connection String" description="LocalMySqlServer Connection String used in web.config by the application to access the database." defaultValue="" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\JAkerblom\\Documents\\Visual\ Studio\ 2015\\Projects\\OffTheRecord\\OffTheRecord\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LocalMySqlServer']/@connectionString" />
+  </parameter>
+  <parameter name="MySqlContext-Web.config Connection String" description="MySqlContext Connection String used in web.config by the application to access the database." defaultValue="MySqlContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\JAkerblom\\Documents\\Visual\ Studio\ 2015\\Projects\\OffTheRecord\\OffTheRecord\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySqlContext']/@connectionString" />
+  </parameter>
+  <parameter name="OffTheRecord.Data.DataContext-Web.config Connection String" description="OffTheRecord.Data.DataContext Connection String used in web.config by the application to access the database." defaultValue="OffTheRecord.Data.DataContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\JAkerblom\\Documents\\Visual\ Studio\ 2015\\Projects\\OffTheRecord\\OffTheRecord\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OffTheRecord.Data.DataContext']/@connectionString" />
+  </parameter>
+</parameters>
