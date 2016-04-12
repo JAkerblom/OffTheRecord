@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Off The Record</title>
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+
+<body>
+  <!--<video src="mov/otr1.mp4" id="bgvid" onended="run()">-->
+  <video src="~/Media/Clip/otr1.mp4" id="bg-vid" onended="run()">
+    <!-- <source src="mov/otr1.webm" type="video/webm">
+    <source src="mov/otr1.mp4" type="video/mp4">
+    <source src="mov/otr2.webm" type="video/webm">
+    <source src="mov/otr2.mp4" type="video/mp4"> -->
+  </video>
+  <form class="form-container" autocomplete="off">
+    
+    <input class='form' type='text' id='name' name='name' placeholder="Name" autofocus=""><br>
+    <input class='form' type='text' id='email' name='email' placeholder="Email"><br>
+    <input class='form' type='text' id='age' name='age' placeholder="yy-mm-dd"><br>
+    <!-- <input class='form' type='text' id='referal' name='referall' placeholder="Who told you?"><br> -->
+
+    <!-- Button section -->
+    <input class="button" id="register_button" type="button" value="register" onclick="runEnd();" />
+  </form>
+
+  <!-- Scripts section -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/index-front.js"></script>
+</body>
+</html>

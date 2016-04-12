@@ -1,5 +1,5 @@
 ﻿@{
-  ViewBag.Title = "Welcome to Off The Record!";
+  ViewBag.Title = "Off The Record";
   ViewBag.InitModule = "homeModule";
   ViewBag.InitController = "guestFormController";
 }
@@ -10,8 +10,9 @@
   <script src="~/Scripts/angular-animate.js"></script>
   <script src="~/Scripts/angular-busy.js"></script>
   <script src="~/js/index.js"></script>
+  
   <style>
-    .form-show {
+    /*.form-show {
       -webkit-transition:all linear 0.5s;
       transition:all linear 0.5s;
     }
@@ -25,27 +26,21 @@
     }
     .msg-show.ng-hide {
       opacity:0;
-    }
+    }*/
 
   </style>
 }
 
 <div data-ng-view class="ng-scope" data-ng-app="ngAnimate">
-  @*<h1>Ditt formulär</h1>*@
-
-  @* Debugsaker som skräpar lite *@
-  @*<pre>{{newGuest}}</pre>
-    <input type="button" class="btn btn-default" value="Send" data-ng-click="addGuest()" />
-    <pre>Added user has values: {{addedUser}}</pre>
-    <input type="text" class="form-control" data-ng-model="newGuest.dateOfBirth" placeholder="yyyymmdd" />*@
-  @*<input type="date" id="datepicker" data-ng-model="newGuest.dateOfBirth" class="date" />*@
-
   <div class="row">
     @*<div class="col-lg-8">
       <div class="well bs-component">*@
-    <div class="">
-      <div ng-show="showForm" class="form-show">
-        <form class="form-horizontal" name="newUserForm" novalidate data-ng-submit="addGuest()">
+    @*<div class="col-lg-3 col-md-4 col-sm-3"></div>*@
+    <div class="col-lg-3 col-centered">
+      @*<div ng-show="showForm" class="form-show">*@
+      <div class="form-show">
+        <form class="form-horizontal" id="newUserForm" name="newUserForm"
+              novalidate data-ng-submit="addGuest()" autocomplete="off">
           <fieldset>
             @*<legend>Frågor att svara på</legend>*@
 
@@ -55,15 +50,15 @@
                 'has-error': newUserForm.name.$invalid && newUserForm.name.$touched,
                 'has-success': !newUserForm.name.$invalid
                }">
-              <label for="zip" class="col-lg-5 control-label">Vad heter du?</label>
-              <div class="col-lg-7">
+              @*<label for="zip" class="col-lg-5 control-label">Vad heter du?</label>*@
+              <div class="col-xs-12">
                 <input class="form-control" id="name" name="name" type="text" required=""
-                       data-ng-model="newGuest.name" placeholder="Ditt namn..."
+                       data-ng-model="newGuest.name" placeholder="Name..."
                        data-ng-minlength="2" />
-                <span class="help-block error"
-                      data-ng-show="newUserForm.name.$error.required && newUserForm.name.$touched">
-                  * Fyll i ditt namn tack.
-                </span>
+                @*<span class="help-block error"
+                    data-ng-show="newUserForm.name.$error.required && newUserForm.name.$touched">
+                * Fyll i ditt namn tack.
+              </span>*@
               </div>
             </div>
 
@@ -73,18 +68,18 @@
                 'has-error': newUserForm.email.$invalid && newUserForm.email.$touched,
                 'has-success': !newUserForm.email.$invalid
                }">
-              <label for="zip" class="col-lg-5 control-label">Din email?</label>
-              <div class="col-lg-7">
+              @*<label for="zip" class="col-lg-5 control-label">Din email?</label>*@
+              <div class="col-xs-12">
                 <input class="form-control" id="email" name="email" type="email" required=""
-                       data-ng-model="newGuest.email" placeholder="Din email..." />
-                <span class="help-block error"
-                      data-ng-show="newUserForm.email.$error.required && newUserForm.email.$touched">
-                  * Fyll i din email.
-                </span>
-                <span class="help-block error"
-                      data-ng-show="newUserForm.email.$error.email">
-                  * Det är inte en giltig email.
-                </span>
+                       data-ng-model="newGuest.email" placeholder="Email..." />
+                @*<span class="help-block error"
+                    data-ng-show="newUserForm.email.$error.required && newUserForm.email.$touched">
+                * Fyll i din email.
+              </span>
+              <span class="help-block error"
+                    data-ng-show="newUserForm.email.$error.email">
+                * Det är inte en giltig email.
+              </span>*@
               </div>
             </div>
 
@@ -94,19 +89,19 @@
                 'has-error': newUserForm.dateOfBirth.$invalid && newUserForm.dateOfBirth.$touched,
                 'has-success': !newUserForm.dateOfBirth.$invalid
                }">
-              <label for="zip" class="col-lg-5 control-label">När är du född?</label>
-              <div class="col-lg-7">
+              @*<label for="zip" class="col-lg-5 control-label">När är du född?</label>*@
+              <div class="col-xs-12">
                 <input class="form-control" id="dateOfBirth" name="dateOfBirth" type="text" required=""
-                       data-ng-model="newGuest.dateOfBirth" placeholder="yyyymmdd"
+                       data-ng-model="newGuest.dateOfBirth" placeholder="Age (yyyymmdd)"
                        data-ng-pattern="/^[0-9]{8}$/" />
                 <!-- data-ng-minlength="5" data-ng-maxlength="5" -->
-                <span class="help-block error"
-                      data-ng-show="newUserForm.dateOfBirth.$error.required && newUserForm.dateOfBirth.$touched">
-                  * Ett åttasiffrigt personnummer krävs.
-                </span>
-                <span class="help-block error" data-ng-show="newUserForm.dateOfBirth.$error.pattern">
-                  * Ej giltigt personnummer. Obs! De fyra sista är inte nödvändiga.
-                </span>
+                @*<span class="help-block error"
+                    data-ng-show="newUserForm.dateOfBirth.$error.required && newUserForm.dateOfBirth.$touched">
+                * Ett åttasiffrigt personnummer krävs.
+              </span>
+              <span class="help-block error" data-ng-show="newUserForm.dateOfBirth.$error.pattern">
+                * Ej giltigt personnummer. Obs! De fyra sista är inte nödvändiga.
+              </span>*@
               </div>
             </div>
 
@@ -116,31 +111,32 @@
                 'has-error': newUserForm.relation.$invalid && newUserForm.relation.$touched,
                 'has-success': !newUserForm.relation.$invalid
                }">
-              <label for="zip" class="col-lg-5 control-label">Vem är din referens?</label>
-              <div class="col-lg-7">
+              @*<label for="zip" class="col-lg-5 control-label">Vem är din referens?</label>*@
+              <div class="col-xs-12">
                 <input class="form-control" id="relation" name="relation" type="text" required=""
-                       data-ng-model="newGuest.relation" placeholder="Namnet på den som bjöd in dig..."
+                       data-ng-model="newGuest.relation" placeholder="Referral's name..."
                        data-ng-minlength="2" />
-                <span class="help-block error"
-                      data-ng-show="newUserForm.relation.$error.required && newUserForm.relation.$touched">
-                  * Fyll i namnet på den person som bjudit in dig.
-                </span>
+                @*<span class="help-block error"
+                    data-ng-show="newUserForm.relation.$error.required && newUserForm.relation.$touched">
+                * Fyll i namnet på den person som bjudit in dig.
+              </span>*@
               </div>
             </div>
 
             <!-- Menu buttons -->
-            <div class="form-group" style="margin-top:30px;">
-              <div class="col-lg-7 col-lg-offset-5">
-                <input type="submit" class="btn" value="Send" data-ng-disabled="newUserForm.$invalid" disabled="disabled">
+            <div class="form-group">
+              <div class="">
+                <input type="submit" id="submit" class="btn" value="Register" onclick="runEnd()"
+                       data-ng-disabled="newUserForm.$invalid" disabled="disabled">
                 @*<a href="#/" class="btn">Avbryt</a>*@
                 <span us-spinner spinner-key="spinner-1" spinner-start-active="1"></span>
-                <div cg-busy="{promise:myPromise,message:'Laddar...'}"></div>
-                <div ng-show="showMessage" class="msg-show">
+                <div cg-busy="{promise:myPromise,message:'Saving...'}"></div>
+                @*<div ng-show="showMessage" class="msg-show">
                   <div class="alert alert-dismissible alert-success">
                     <button type="button" class="close" data-dismiss="alert">×</button>
                     <strong>Tack så mycket!</strong> Vi behandlar snart din förfrågan.
                   </div>
-                </div>
+                </div>*@
               </div>
             </div>
           </fieldset>
@@ -149,6 +145,11 @@
     </div>
   </div>
 </div>
+
+
+
+
+
 
 <!-- user.age -->
 @*<div class="form-group"

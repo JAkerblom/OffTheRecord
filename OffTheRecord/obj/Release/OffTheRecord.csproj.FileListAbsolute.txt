@@ -97,3 +97,12 @@ C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheReco
 C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\obj\Release\OffTheRecord.csprojResolveAssemblyReference.cache
 C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\obj\Release\OffTheRecord.dll
 C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\obj\Release\OffTheRecord.pdb
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\MySQL.VisualStudio.dll
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\MySQL.Utility.dll
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\EnvDTE.dll
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\MySql.Parser.dll
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\EnvDTE80.dll
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\Microsoft.MSXML.dll
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\stdole.dll
+C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
