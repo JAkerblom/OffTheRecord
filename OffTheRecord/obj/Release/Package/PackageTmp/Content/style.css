@@ -42,7 +42,7 @@ a:hover, a:active, a:focus {
    text-align: center;
    outline: none;
    text-decoration: none;
-   border-radius: 5px;
+   border-radius: 3px;
    transition: background-color 0.2s ease-out,
               color 0.2s ease-out;
 }
@@ -51,7 +51,7 @@ a:hover, a:active, a:focus {
 .btn:hover,
 .btn:active,
 .btn:focus {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.62);
   border: 1px solid #000;
   color: #FFF;
   transition: background-color 0.3s ease-in,
@@ -134,7 +134,7 @@ video {
   border:none;
   /*border-bottom: solid #000;*/
   border-bottom: solid 2pt #fff;
-  border-radius: 0;
+  border-radius: 1px;
   margin: 0 auto;
   /*margin-bottom: 1em;*/
   margin-bottom: 20pt;
@@ -151,6 +151,22 @@ video {
 .form-control:focus {
   box-shadow: none !important;
 }
+
+.alert-success {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-family: Lato;
+  font-weight: 300 !important;
+  background: none;
+  border: none;
+  margin-top: 100px;
+  /*border-radius: 2px;*/
+}
+.alert-success span {
+  font-size: 0.7em;
+}
+
 
 input[placeholder]{
     text-align:center;

@@ -64,6 +64,7 @@ function runEnd() {
     vid.play();
     vid.onended = function() {
       vid.remove();
+      //showSuccess();
     };
   }, 500);
 };

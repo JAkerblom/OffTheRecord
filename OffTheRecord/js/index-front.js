@@ -69,6 +69,17 @@ function runEnd() {
   }, 500);
 };
 
+var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
+if (iOS) {
+  vid.parentNode.removeChild(vid);
+
+  //var background_videos = document.querySelectorAll('#bg-vid');
+  //var background_videos = document.getElementById('bg-vid');
+  //for (i = 0; i < background_videos.length; i++) {
+  //  background_videos[i].parentNode.removeChild(background_videos[i]);
+  //}
+}
+
 setTimeout(function(){
   vid.play();
 }, 800);

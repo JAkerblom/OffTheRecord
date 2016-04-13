@@ -22,8 +22,13 @@ namespace OffTheRecord.Controllers
     public HttpResponseMessage Post([FromBody]TempGuestInput gi)
     {
       var date = gi.DateOfBirth;
+
+      if (date.Length == 6) {
+        date = "19" + date; 
+      }
       date = date.Insert(4, "-");
       date = date.Insert(7, "-");
+
       var newDate = Convert.ToDateTime(date);
 
       var newgi = new GuestInput()
