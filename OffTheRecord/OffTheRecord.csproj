@@ -279,6 +279,7 @@
     <Content Include="Media\Clips\otr3.mp4" />
     <Content Include="Media\ElevatorPics\otr_button.png" />
     <Content Include="Media\ElevatorPics\otr_button.tiff" />
+    <Content Include="Media\ElevatorPics\otr_hiss.gif" />
     <Content Include="Media\ElevatorPics\otr_hiss.jpg" />
     <Content Include="Media\Logo\O.A4.jpg" />
     <Content Include="Media\Logo\R.A4.jpg" />
