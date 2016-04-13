@@ -17,10 +17,18 @@ body {
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-	body {
-    background: #000 url ('../Media/ElevatorPics/otr_hiss.jpg') no-repeat center top 50px;
+  
+  body {
+    background: #020202 url('../Media/ElevatorPics/otr_hiss.jpg') no-repeat;
+    background-position: center;
+    /*background-size: 120% 120%;*/
+    background-size: cover;
+    background-position-y: 100px;
+  }
+  /*html > body body {
+    background: blue url('../Media/ElevatorPics/otr_hiss.jpg') no-repeat;
     /*background-size: cover;*/
-	}
+	/*}*/
 }
 
 a {

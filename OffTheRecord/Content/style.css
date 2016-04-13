@@ -20,10 +20,10 @@ body {
   
   body {
     background: #020202 url('../Media/ElevatorPics/otr_hiss.jpg') no-repeat;
-    background-position: center;
+    background-position: center bottom;
     /*background-size: 120% 120%;*/
     background-size: cover;
-    background-position-y: 100px;
+    /*background-position-y: 100px;*/
   }
   /*html > body body {
     background: blue url('../Media/ElevatorPics/otr_hiss.jpg') no-repeat;
