@@ -105,4 +105,3 @@ C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheReco
 C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\Microsoft.MSXML.dll
 C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\stdole.dll
 C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
-C:\Users\JAkerblom\Documents\Visual Studio 2015\Projects\OffTheRecord\OffTheRecord\obj\Debug\OffTheRecord.csprojResolveAssemblyReference.cache
