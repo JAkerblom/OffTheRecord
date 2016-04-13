@@ -12,6 +12,15 @@
 body {
   margin: 0;
   background: #000;
+  /*background: #000 url('../Media/ElevatorPics/otr_hiss.gif') no-repeat center top 50px;
+  background-size: cover;*/
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	body {
+    background: #000 url ('../Media/ElevatorPics/otr_hiss.jpg') no-repeat center top 50px;
+    /*background-size: cover;*/
+	}
 }
 
 a {
