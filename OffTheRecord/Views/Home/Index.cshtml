@@ -113,16 +113,17 @@
                 @*<a href="#/" class="btn">Avbryt</a>*@
                 <span us-spinner spinner-key="spinner-1" spinner-start-active="1"></span>
                 <div cg-busy="{promise:myPromise,message:'Saving...'}"></div>
-                @*<div ng-show="showMessage" class="msg-show">
-                  <div class="alert alert-dismissible alert-success">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    <strong>Tack så mycket!</strong> Vi behandlar snart din förfrågan.
-                  </div>
-                </div>*@
+                
               </div>
             </div>
           </fieldset>
         </form>
+      </div>
+      <div ng-show="showMessage" class="msg-show">
+        <div class="alert alert-success">
+          @*<button type="button" class="close" data-dismiss="alert">×</button>*@
+          Thank you! <br /> You will receive an email with further information.
+        </div>
       </div>
     </div>
   </div>

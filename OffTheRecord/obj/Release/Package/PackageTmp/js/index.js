@@ -14,6 +14,7 @@
           $scope.myPromise = _addGuest()
             .then(function (result) {
               console.log("Back to fcn 1. Ready to show info on success.");
+              runEnd();
               //$scope.showMessage = true;
             },
             function () {
@@ -36,7 +37,7 @@
               // Error
               deferred.reject();
             });
-          deferred.resolve();
+          //deferred.resolve();
           return deferred.promise;
         };
 
