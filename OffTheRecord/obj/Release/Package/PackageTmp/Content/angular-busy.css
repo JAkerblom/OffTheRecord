@@ -49,8 +49,8 @@
 }
 
 .cg-busy-backdrop {
-	background-color:white;
-	opacity:.7;
+	background-color: rgba(252, 252, 252, 0.00);
+	opacity:.8;
 }
 
 .cg-busy-backdrop-animation.ng-hide-add,
@@ -77,10 +77,14 @@
 	position:relative;
     z-index:1002;
 	padding-bottom: 6px;
-	color:#333333;
-	text-shadow:0 1px 1px rgba(255, 255, 255, 0.75);
-	background-color:#e9eeee;
+	/*color:#333333;*/
+  color: #fff;
+	/*text-shadow:0 1px 1px rgba(255, 255, 255, 0.75);*/
+	/*background-color:#e9eeee;
+	border:1px solid #dddddd;*/
+  background-color:rgba(233, 238, 238, 0.10);
 	border:1px solid #dddddd;
+  opacity: 0.8;
 	border-top-width:0;
 	-webkit-border-radius:7px;
 	-moz-border-radius:7px;
@@ -94,7 +98,8 @@
 .cg-busy-default-text{
 	margin:13px 12px 6px 49px;
 	font-size:16px;
-	color:#555;
+	/*color:#555;*/
+  color: #fff;
 	text-align: left;
 	max-width: 400px;
 }
@@ -109,11 +114,13 @@
 .cg-busy-default-spinner div{
 	width:12%;
 	height:26%;
-	background:#000;
+	/*background:#000;*/
+  background: #fff;
 	position:absolute;
 	left:44.5%;
 	top:37%;
-	opacity:0;
+	/*opacity:0;*/
+  opacity: 0.5;
 	-webkit-animation:cg-busy-spinner-anim 1s linear infinite;
 	-moz-animation:cg-busy-spinner-anim 1s linear infinite;
 	-ms-animation:cg-busy-spinner-anim 1s linear infinite;
