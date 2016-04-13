@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OffTheRecord.Models
 {
-  [Table("GuestFormInputs")]
+  [Table("April-29")]
   public class GuestInput
   {
     [Key]
