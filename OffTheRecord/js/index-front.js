@@ -38,8 +38,8 @@ function fadeVolume(volume, callback) {
 
 // Clips
 var clipsPath = "Media/Clips/";
-var clips = ["otr1.mp4", "otr2.mp4", "otr3.mp4"];
-//var clips = ["otr-start.mp4", "otr-middle.mp4", "otr-end.mp4"];
+//var clips = ["otr1.mp4", "otr2.mp4", "otr3.mp4"];
+var clips = ["otr-start.mp4", "otr-middle.mp4", "otr-end.mp4"];
 
 function run() {
     vid.setAttribute("loop","");

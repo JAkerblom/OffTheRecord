@@ -1,13 +1,13 @@
-@font-face {
-    font-family: Gotham-light; /*a name to be used later*/
+/*@font-face {
+    font-family: Gotham-light; /*a name to be used later
     src: url('../fonts/Gotham-Light.otf');
     src: url('../fonts/Gotham-Light.ttf'); 
     src: url('../fonts/Gotham-Light.eot');
     src: url('../fonts/Gotham-Light.svg');
     src: url('../fonts/Gotham-Light.woff');
-    /*URL to font*/
-    /*src: "~/fonts/Gotham-Light.otf"; /*URL to font*/
-}
+}*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
 
 body {
   margin: 0;
@@ -32,8 +32,9 @@ a:hover, a:active, a:focus {
 .button {
   display: inline-block;
   background-color: transparent;
-  font-size: 1.5em;
-  font-family: Gotham-light;
+  font-size: 1.3em;
+  /*font-family: Lato, Gotham-light;*/
+  font-family: Lato;
    width: 200px;
    padding: 8px;
    color: #ddd;
@@ -66,16 +67,25 @@ a:hover, a:active, a:focus {
   #bgvid { display: none; }
 }*/
 
+.video-content {
+  /*width: 100%;*/
+  /*height:1000px;*/
+  min-width: 600px;
+  min-height: 800px;
+}
 
 /* Video */
 video {
     position: fixed;
-    top: 50%;
+    /*position:absolute;*/
+    /*top: 50%;*/
+    top: 500px;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 400px;
+    min-height: 1000px;
+    /*max-width: 1700px;*/
     width: auto;
-    height: auto;
+    /*height: auto;*/
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
@@ -95,10 +105,10 @@ video {
   text-align: center;
   /*margin-left: auto;
   margin-right: auto;*/
-  margin-top: 25%;
+  margin-top: 100px;
   /*width:24em;*/
   /*height:18em;*/
-  padding-left: 30px;
+  /*padding-left: 30px;*/
 }
 
 .col-centered {
@@ -111,6 +121,15 @@ video {
   /*margin-left: 5px;*/
 }
 
+@media (max-width: 415px) {
+  /*.form-control {
+
+  }*/
+  .col-lg-3 {
+    width: 70%;
+  }
+}
+
 /*.form-group*/
 .form-control {
   text-overflow: ellipsis;
@@ -119,14 +138,23 @@ video {
   color: #FFF;
   background: transparent;
   border:none;
-  border-bottom: solid #000;
+  /*border-bottom: solid #000;*/
+  border-bottom: solid 2pt #fff;
+  border-radius: 0;
   margin: 0 auto;
   /*margin-bottom: 1em;*/
   margin-bottom: 20pt;
   padding-bottom: 0em;
   outline: none;
-  font-size: 1.5em;
-  font-family: Gotham-light;
+  /*font-size: 1.5em;*/
+  font-size: 1.4em;
+  /*font-family: Lato, Gotham-light;*/
+  font-family: Lato;
+}
+
+.form-control:active,
+.form-control:focus {
+  box-shadow: none !important;
 }
 
 input[placeholder]{

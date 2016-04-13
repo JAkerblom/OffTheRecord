@@ -53,7 +53,7 @@
               @*<label for="zip" class="col-lg-5 control-label">Vad heter du?</label>*@
               <div class="col-xs-12">
                 <input class="form-control" id="name" name="name" type="text" required=""
-                       data-ng-model="newGuest.name" placeholder="Name..."
+                       data-ng-model="newGuest.name" placeholder="name"
                        data-ng-minlength="2" />
                 @*<span class="help-block error"
                     data-ng-show="newUserForm.name.$error.required && newUserForm.name.$touched">
@@ -71,7 +71,7 @@
               @*<label for="zip" class="col-lg-5 control-label">Din email?</label>*@
               <div class="col-xs-12">
                 <input class="form-control" id="email" name="email" type="email" required=""
-                       data-ng-model="newGuest.email" placeholder="Email..." />
+                       data-ng-model="newGuest.email" placeholder="email" />
                 @*<span class="help-block error"
                     data-ng-show="newUserForm.email.$error.required && newUserForm.email.$touched">
                 * Fyll i din email.
@@ -92,7 +92,7 @@
               @*<label for="zip" class="col-lg-5 control-label">När är du född?</label>*@
               <div class="col-xs-12">
                 <input class="form-control" id="dateOfBirth" name="dateOfBirth" type="text" required=""
-                       data-ng-model="newGuest.dateOfBirth" placeholder="Age (yyyymmdd)"
+                       data-ng-model="newGuest.dateOfBirth" placeholder="yyyymmdd"
                        data-ng-pattern="/^[0-9]{8}$/" />
                 <!-- data-ng-minlength="5" data-ng-maxlength="5" -->
                 @*<span class="help-block error"
@@ -101,24 +101,6 @@
               </span>
               <span class="help-block error" data-ng-show="newUserForm.dateOfBirth.$error.pattern">
                 * Ej giltigt personnummer. Obs! De fyra sista är inte nödvändiga.
-              </span>*@
-              </div>
-            </div>
-
-            <!-- guest.relation -->
-            <div class="form-group"
-                 data-ng-class="{
-                'has-error': newUserForm.relation.$invalid && newUserForm.relation.$touched,
-                'has-success': !newUserForm.relation.$invalid
-               }">
-              @*<label for="zip" class="col-lg-5 control-label">Vem är din referens?</label>*@
-              <div class="col-xs-12">
-                <input class="form-control" id="relation" name="relation" type="text" required=""
-                       data-ng-model="newGuest.relation" placeholder="Referral's name..."
-                       data-ng-minlength="2" />
-                @*<span class="help-block error"
-                    data-ng-show="newUserForm.relation.$error.required && newUserForm.relation.$touched">
-                * Fyll i namnet på den person som bjudit in dig.
               </span>*@
               </div>
             </div>
@@ -149,7 +131,23 @@
 
 
 
-
+ <!-- guest.relation -->
+@*<div class="form-group"
+       data-ng-class="{
+      'has-error': newUserForm.relation.$invalid && newUserForm.relation.$touched,
+      'has-success': !newUserForm.relation.$invalid
+     }">
+    @*<label for="zip" class="col-lg-5 control-label">Vem är din referens?</label>
+    <div class="col-xs-12">
+      <input class="form-control" id="relation" name="relation" type="text" required=""
+             data-ng-model="newGuest.relation" placeholder="Referral's name..."
+             data-ng-minlength="2" />
+      @*<span class="help-block error"
+          data-ng-show="newUserForm.relation.$error.required && newUserForm.relation.$touched">
+      * Fyll i namnet på den person som bjudit in dig.
+    </span>
+    </div>
+  </div>*@
 
 <!-- user.age -->
 @*<div class="form-group"
