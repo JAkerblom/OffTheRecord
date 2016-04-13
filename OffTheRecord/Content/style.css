@@ -1,6 +1,11 @@
 @font-face {
     font-family: Gotham-light; /*a name to be used later*/
-    src: url(../fonts/Gotham-Light.otf); /*URL to font*/
+    src: url('../fonts/Gotham-Light.otf');
+    src: url('../fonts/Gotham-Light.ttf'); 
+    src: url('../fonts/Gotham-Light.eot');
+    src: url('../fonts/Gotham-Light.svg');
+    src: url('../fonts/Gotham-Light.woff');
+    /*URL to font*/
     /*src: "~/fonts/Gotham-Light.otf"; /*URL to font*/
 }
 
@@ -108,14 +113,18 @@ video {
 
 /*.form-group*/
 .form-control {
+  text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
   text-align:center;
   color: #FFF;
   background: transparent;
   border:none;
   border-bottom: solid #000;
   margin: 0 auto;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
+  margin-bottom: 20pt;
   padding-bottom: 0em;
+  outline: none;
   font-size: 1.5em;
   font-family: Gotham-light;
 }

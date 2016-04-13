@@ -8,10 +8,38 @@
 var vid = document.getElementById("bg-vid");
 var form = $('#newUserForm');
 var submitButton = $("#submit");
+var audio_loop = new Audio('Media/Sound/otr-music-loop.m4a');
+var audio_end = new Audio('Media/Sound/otr-music-end.m4a');
+
+// Loopar introlåt
+audio_loop.addEventListener('ended', function () {
+  this.currentTime = 0;
+  this.play();
+}, false);
+audio_loop.volume = 0.01;
+var maxVol = 0.99;
+audio_loop.play();
+fadeVolume(audio_loop.volume, function () {
+  console.log('fade complete');
+});
+
+function fadeVolume(volume, callback) {
+  var factor = 0.01,
+      speed = 200;
+  if (volume < maxVol) {
+    setTimeout(function () {
+      fadeVolume((audio_loop.volume += factor), callback);
+    }, speed);
+  } else {
+    (typeof (callback) !== 'function') || callback();
+  }
+}
+
 
 // Clips
-var clipsPath = "Media/Clip/";
+var clipsPath = "Media/Clips/";
 var clips = ["otr1.mp4", "otr2.mp4", "otr3.mp4"];
+//var clips = ["otr-start.mp4", "otr-middle.mp4", "otr-end.mp4"];
 
 function run() {
     vid.setAttribute("loop","");
@@ -23,7 +51,9 @@ function run() {
     submitButton.attr("display", "block");
 };
 
-function runEnd(){
+function runEnd() {
+  audio_loop.pause();
+  audio_end.play();
   //form_container.fadeOut();
   form.fadeOut();
   setTimeout(function(){

@@ -24,17 +24,17 @@
         var _addGuest = function () {
           console.log("In fcn 2. Before post.");
           var deferred = $q.defer();
-          $http.post("http://localhost:60271/api/guestFormInput/", $scope.newGuest)
-            .then(function (result) {
-              // Success
-              console.log("Back to fcn 2. Ready to resolve and pass back to fcn 1.");
-              $scope.addedUser = result.data;
-              deferred.resolve();
-            },
-            function () {
-              // Error
-              deferred.reject();
-            });
+          //$http.post("http://localhost:60271/api/guestFormInput/", $scope.newGuest)
+          //  .then(function (result) {
+          //    // Success
+          //    console.log("Back to fcn 2. Ready to resolve and pass back to fcn 1.");
+          //    $scope.addedUser = result.data;
+          //    deferred.resolve();
+          //  },
+          //  function () {
+          //    // Error
+          //    deferred.reject();
+          //  });
           //deferred.resolve();
           return deferred.promise;
         };

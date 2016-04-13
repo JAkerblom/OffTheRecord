@@ -268,14 +268,19 @@
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\Gotham-Light.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Media\Clip\otr1.mp4" />
-    <Content Include="Media\Clip\otr2.mp4" />
-    <Content Include="Media\Clip\otr3.mp4" />
-    <Content Include="Media\Elevator\otr_button.png" />
-    <Content Include="Media\Elevator\otr_button.tiff" />
-    <Content Include="Media\Elevator\otr_hiss.jpg" />
+    <Content Include="js\index-front-2.js" />
+    <Content Include="Media\Clips\otr-end.mp4" />
+    <Content Include="Media\Clips\otr-middle.mp4" />
+    <Content Include="Media\Clips\otr-start.mp4" />
+    <Content Include="Media\Clips\otr1.mp4" />
+    <Content Include="Media\Clips\otr2.mp4" />
+    <Content Include="Media\Clips\otr3.mp4" />
+    <Content Include="Media\ElevatorPics\otr_button.png" />
+    <Content Include="Media\ElevatorPics\otr_button.tiff" />
+    <Content Include="Media\ElevatorPics\otr_hiss.jpg" />
     <Content Include="Media\Logo\O.A4.jpg" />
     <Content Include="Media\Logo\R.A4.jpg" />
     <Content Include="Media\Logo\T.A4.jpg" />
@@ -284,6 +289,8 @@
     <Content Include="Media\Logo\Test_3.jpg" />
     <Content Include="js\index-front.js" />
     <Content Include="js\index.js" />
+    <Content Include="Media\Sound\otr-music-end.m4a" />
+    <Content Include="Media\Sound\otr-music-loop.m4a" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\angular-animate.js" />
@@ -334,6 +341,9 @@
     <Content Include="fonts\Gotham-Light.otf" />
     <Content Include="Media\Logo\Final.ai" />
     <Content Include="Media\Logo\Test_2.psd" />
+    <Content Include="fonts\Gotham-Light.ttf" />
+    <Content Include="fonts\Gotham-Light.eot" />
+    <Content Include="fonts\Gotham-Light.woff" />
     <None Include="Properties\PublishProfiles\offthrecord - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\offthrecord - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -348,6 +358,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="templates\index-2.html" />
     <Content Include="templates\index.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
