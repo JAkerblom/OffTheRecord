@@ -29,7 +29,7 @@ namespace OffTheRecord.Controllers
       var newgi = new GuestInput()
       {
         Name = gi.Name,
-        Relation = gi.Relation,
+        //Relation = gi.Relation,
         Email = gi.Email,
         DateOfBirth = newDate
       };

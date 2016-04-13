@@ -1,18 +1,22 @@
 ﻿<!DOCTYPE html>
 <html lang="se" data-ng-app="@ViewBag.InitModule" data-ng-controller="guestFormController">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    <link href="~/Content/angular-busy.css" rel="stylesheet" type="text/css" />
-    
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@ViewBag.Title</title>
+  @*@Styles.Render("~/Content/css")*@
+  <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+  <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+  @*@Scripts.Render("~/bundles/modernizr")*@
+  <script src="~/Scripts/modernizr-2.6.2.js"></script>
+  <link href="~/Content/angular-busy.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
-  <div class="video-content">
-    <video src="Media/Clips/otr-start.mp4" id="bg-vid" onended="run()"></video>
-  </div>
+  @*<div class="video-content">*@
+  <video src="Media/Clips/otr-start.mp4" id="bg-vid" onended="run()"></video>
+  @*</div>*@
   @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
