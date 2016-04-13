@@ -69,23 +69,10 @@ function runEnd() {
   }, 500);
 };
 
-
 var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
 if (iOS) {
-  document.body.style = "background: #000 url('Media/ElevatorPics/otr_hiss.gif') no-repeat; background-size: cover; background-position: center;";
-  vid.parentNode.removeChild(vid);
-
-  //document.body.style = "background: #000 url('Media/ElevatorPics/otr_hiss.jpg') no-repeat; background-size: cover; background-position: center;";
-  //vid.parentNode.removeChild(vid);
-
-  //document.getElementsByTagName("body")[0].setAttribute("background", "Media/ElevatorPics/otr-hiss.jpg");
-  //vid.parentNode.removeChild(vid);
-
-  //var background_videos = document.querySelectorAll('#bg-vid');
-  //var background_videos = document.getElementById('bg-vid');
-  //for (i = 0; i < background_videos.length; i++) {
-  //  background_videos[i].parentNode.removeChild(background_videos[i]);
-  //}
+  //document.body.style = "background: #000 url('Media/ElevatorPics/otr_hiss.jpg') no-repeat; background-size: cover; background-position: center top 50px;";
+  vid.parentNode.removeChild(vid); 
 }
 
 setTimeout(function(){
