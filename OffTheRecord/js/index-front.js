@@ -1,15 +1,14 @@
-//var vid = document.getElementById("bgvid");
-//var form = $('.form');
-//var form_container = $('.form-container');
-//var register_button = document.getElementById("register_button");
-
 // Form and video elements
-//var vid = $("#bg-vid");
+var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
 var vid = document.getElementById("bg-vid");
 var form = $('#newUserForm');
 var submitButton = $("#submit");
+var msg = $('.msg-show');
 var audio_loop = new Audio('Media/Sound/otr-music-loop.m4a');
 var audio_end = new Audio('Media/Sound/otr-music-end.m4a');
+var clipsPath = "Media/Clips/";
+var clips = ["otr-start.mp4", "otr-middle.mp4", "otr-end.mp4"];
+//var clips = ["otr1.mp4", "otr2.mp4", "otr3.mp4"];
 
 // Loopar introlåt
 audio_loop.addEventListener('ended', function () {
@@ -35,51 +34,49 @@ function fadeVolume(volume, callback) {
   }
 }
 
-
-// Clips
-var clipsPath = "Media/Clips/";
-//var clips = ["otr1.mp4", "otr2.mp4", "otr3.mp4"];
-var clips = ["otr-start.mp4", "otr-middle.mp4", "otr-end.mp4"];
-
 function run() {
-    vid.setAttribute("loop","");
-    //vid.src = "mov/otr2.mp4";
+  if (!iOS) {
+    vid.setAttribute("loop", "");
     vid.src = clipsPath + clips[1];
     vid.load();
     vid.play();
-    //register_button.setAttribute("display", "block");
-    submitButton.attr("display", "block");
+  }
+  submitButton.attr("display", "block");
 };
 
 function runEnd() {
   audio_loop.pause();
   audio_end.play();
-  //form_container.fadeOut();
   form.fadeOut();
-  setTimeout(function(){
-    vid.removeAttribute("loop");
-    //vid.src = "mov/otr3.mp4";
-    vid.src = clipsPath + clips[2];
-    vid.load();
-    vid.play();
-    vid.onended = function() {
-      vid.remove();
-      //showSuccess();
-    };
-  }, 500);
+  if (!iOS) {
+    setTimeout(function(){
+      vid.removeAttribute("loop");
+      vid.src = clipsPath + clips[2];
+      vid.load();
+      vid.play();
+      vid.onended = function() {
+        vid.remove();
+      };
+    }, 500);
+  }
+  //else {
+  //  msg.fadeIn();
+  //}
 };
 
-var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
 if (iOS) {
   //document.body.style = "background: #000 url('Media/ElevatorPics/otr_hiss.jpg') no-repeat; background-size: cover; background-position: center top 50px;";
   vid.parentNode.removeChild(vid);
+  document.body.style = "background: #020202";
   //document.body.style = "background: #020202 url('Media/ElevatorPics/otr_hiss.gif') no-repeat; background-position: center bottom; background-size: cover;";
   //document.getElementById('submit').style = "margin-top: 30px;";
 }
 
-setTimeout(function () {
-  vid.play();
-}, 800);
+if (!iOS) {
+  setTimeout(function () {
+    vid.play();
+  }, 800);
+}
 
 //delay på formulär
 if (iOS) {

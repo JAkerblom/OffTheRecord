@@ -10,7 +10,7 @@
   <script src="~/Scripts/angular-animate.js"></script>
   <script src="~/Scripts/angular-busy.js"></script>
   <script src="~/js/index.js"></script>
-  
+
   <style>
     /*.form-show {
       -webkit-transition:all linear 0.5s;
@@ -27,7 +27,6 @@
     .msg-show.ng-hide {
       opacity:0;
     }*/
-
   </style>
 }
 
@@ -56,9 +55,9 @@
                        data-ng-model="newGuest.name" placeholder="name"
                        data-ng-minlength="2" />
                 @*<span class="help-block error"
-                    data-ng-show="newUserForm.name.$error.required && newUserForm.name.$touched">
-                * Fyll i ditt namn tack.
-              </span>*@
+                        data-ng-show="newUserForm.name.$error.required && newUserForm.name.$touched">
+                    * Fyll i ditt namn tack.
+                  </span>*@
               </div>
             </div>
 
@@ -73,13 +72,13 @@
                 <input class="form-control" id="email" name="email" type="email" required=""
                        data-ng-model="newGuest.email" placeholder="email" />
                 @*<span class="help-block error"
-                    data-ng-show="newUserForm.email.$error.required && newUserForm.email.$touched">
-                * Fyll i din email.
-              </span>
-              <span class="help-block error"
-                    data-ng-show="newUserForm.email.$error.email">
-                * Det är inte en giltig email.
-              </span>*@
+                        data-ng-show="newUserForm.email.$error.required && newUserForm.email.$touched">
+                    * Fyll i din email.
+                  </span>
+                  <span class="help-block error"
+                        data-ng-show="newUserForm.email.$error.email">
+                    * Det är inte en giltig email.
+                  </span>*@
               </div>
             </div>
 
@@ -96,12 +95,12 @@
                        data-ng-pattern="/^([0-9]{6}|[0-9]{8})$/" />
                 <!-- data-ng-minlength="5" data-ng-maxlength="5" -->
                 @*<span class="help-block error"
-                    data-ng-show="newUserForm.dateOfBirth.$error.required && newUserForm.dateOfBirth.$touched">
-                * Ett åttasiffrigt personnummer krävs.
-              </span>
-              <span class="help-block error" data-ng-show="newUserForm.dateOfBirth.$error.pattern">
-                * Ej giltigt personnummer. Obs! De fyra sista är inte nödvändiga.
-              </span>*@
+                        data-ng-show="newUserForm.dateOfBirth.$error.required && newUserForm.dateOfBirth.$touched">
+                    * Ett åttasiffrigt personnummer krävs.
+                  </span>
+                  <span class="help-block error" data-ng-show="newUserForm.dateOfBirth.$error.pattern">
+                    * Ej giltigt personnummer. Obs! De fyra sista är inte nödvändiga.
+                  </span>*@
               </div>
             </div>
 
@@ -118,20 +117,21 @@
           </fieldset>
         </form>
       </div>
-      <div ng-show="showMessage" class="msg-show">
+      @*<div ng-show="showMessage" class="msg-show">*@
+      <div class="msg-show">
         <div class="alert alert-success">
           @*<button type="button" class="close" data-dismiss="alert">×</button>*@
-          Thank you! <br/> <span style="font-weight: 100;">You will receive an email on the day of the event.</span>
+          Thank you! <br /> <span style="font-weight: 100;">You will receive an email on the day of the event.</span>
         </div>
       </div>
-    </div>
   </div>
+</div>
 </div>
 
 
 
 
- <!-- guest.relation -->
+<!-- guest.relation -->
 @*<div class="form-group"
        data-ng-class="{
       'has-error': newUserForm.relation.$invalid && newUserForm.relation.$touched,

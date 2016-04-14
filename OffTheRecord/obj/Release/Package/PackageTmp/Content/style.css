@@ -22,8 +22,9 @@ body {
     background: #020202 url('../Media/ElevatorPics/otr_hiss.gif') no-repeat;
     background-position: center bottom;
     /*background-size: 120% 120%;*/
-    background-size: cover;
-    background-position-y: 100px;
+    /*background-size: contain;*/
+    background-size: 350%;
+    background-position-y: 10px;
   }
   /*html > body body {
     background: blue url('../Media/ElevatorPics/otr_hiss.jpg') no-repeat;
@@ -31,12 +32,16 @@ body {
 	}*/
 
   #submit-group {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   #newUserForm {
-    margin-top: 50px;
+    margin-top: 0px;
   }
+}
+
+.msg-show {
+  display: none;
 }
 
 a {
@@ -60,7 +65,8 @@ a:hover, a:active, a:focus {
   font-size: 1.3em;
   /*font-family: Lato, Gotham-light;*/
   font-family: Lato;
-   width: 200px;
+   /*width: 200px;*/
+   width: 60%;
    padding: 8px;
    color: #ddd;
    border: 1px solid rgba(255, 255, 255, .5);
@@ -145,7 +151,7 @@ video {
 
   }*/
   .col-lg-3 {
-    width: 70%;
+    width: 65%;
   }
 }
 

@@ -4,12 +4,13 @@
       function ($scope, $window, $http, $q, $timeout) {
         $scope.newGuest = {};
         $scope.addedUser = {}; // Debug
-        $scope.showMessage = false;
+        //$scope.showMessage = false;
         //$scope.showForm = true;
 
         var showSuccess = function () {
           console.log("Showing ")
-          $scope.showMessage = true;
+          //$scope.showMessage = true;
+          $('.msg-show').fadeIn();
         }
 
         $scope.addGuest = function () {
@@ -20,7 +21,14 @@
             .then(function (result) {
               console.log("Back to fcn 1. Ready to show info on success.");
               runEnd();
-              $timeout(showSuccess, 4000);
+              if (!iOS) {
+                $timeout(showSuccess, 4000);
+              } else {
+                showSuccess();
+              }
+              //else {
+              //  $timeout(showSuccess, 500);
+              //}
             },
             function () {
               console.log("Could not add form input.")
