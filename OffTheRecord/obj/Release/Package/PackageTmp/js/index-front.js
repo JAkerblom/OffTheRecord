@@ -72,18 +72,27 @@ function runEnd() {
 var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
 if (iOS) {
   //document.body.style = "background: #000 url('Media/ElevatorPics/otr_hiss.jpg') no-repeat; background-size: cover; background-position: center top 50px;";
-  vid.parentNode.removeChild(vid); 
+  vid.parentNode.removeChild(vid);
+  //document.body.style = "background: #020202 url('Media/ElevatorPics/otr_hiss.gif') no-repeat; background-position: center bottom; background-size: cover;";
+  //document.getElementById('submit').style = "margin-top: 30px;";
 }
 
-setTimeout(function(){
+setTimeout(function () {
   vid.play();
 }, 800);
 
 //delay på formulär
-setTimeout(function(){
-  //form_container.fadeIn(1200);
-  form.fadeIn(1200);
-}, 3000);
+if (iOS) {
+  setTimeout(function(){
+    form.fadeIn(1200);
+  }, 0);
+}
+else {
+  setTimeout(function () {
+    form.fadeIn(1200);
+  }, 3000);
+}
+
 
 ///----- Trash can------
 //----------------------
