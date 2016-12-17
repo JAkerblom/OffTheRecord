@@ -13,6 +13,11 @@ namespace OffTheRecord.Controllers
       return View();
     }
 
+    public ActionResult ClosedSubmission()
+    {
+      return View();
+    }
+
     public ActionResult About()
     {
       ViewBag.Message = "Your application description page.";

@@ -271,15 +271,19 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="js\index-front-2.js" />
+    <Content Include="Media\Clips\old\otr-end.mp4" />
+    <Content Include="Media\Clips\old\otr-middle.mp4" />
+    <Content Include="Media\Clips\old\otr-start.mp4" />
+    <Content Include="Media\Clips\old\otr1.mp4" />
+    <Content Include="Media\Clips\old\otr2.mp4" />
+    <Content Include="Media\Clips\old\otr3.mp4" />
     <Content Include="Media\Clips\otr-end.mp4" />
     <Content Include="Media\Clips\otr-middle.mp4" />
     <Content Include="Media\Clips\otr-start.mp4" />
-    <Content Include="Media\Clips\otr1.mp4" />
-    <Content Include="Media\Clips\otr2.mp4" />
-    <Content Include="Media\Clips\otr3.mp4" />
+    <Content Include="Media\ElevatorPics\otr_hiss.gif" />
     <Content Include="Media\ElevatorPics\otr_button.png" />
     <Content Include="Media\ElevatorPics\otr_button.tiff" />
-    <Content Include="Media\ElevatorPics\otr_hiss.gif" />
+    <Content Include="Media\ElevatorPics\old\otr_hiss.gif" />
     <Content Include="Media\ElevatorPics\otr_hiss.jpg" />
     <Content Include="Media\Logo\O.A4.jpg" />
     <Content Include="Media\Logo\R.A4.jpg" />
@@ -401,6 +405,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Home\ClosedSubmission.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
